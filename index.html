@@ -107,7 +107,9 @@
                     <li class="list-group-item">Disponible: SI</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link btn btn-success">Comprar</a>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Comprar
+                    </button>
                     <a href="#" class="card-link btn btn-warning">Ver más</a>
                 </div>
             </div>
@@ -128,7 +130,9 @@
                     <li class="list-group-item">Disponible: SI</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link btn btn-success">Comprar</a>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Comprar
+                    </button>
                     <a href="#" class="card-link btn btn-warning">Ver más</a>
                 </div>
             </div>
@@ -148,7 +152,9 @@
                     <li class="list-group-item">Disponible: SI</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link btn btn-success">Comprar</a>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Comprar
+                    </button>
                     <a href="#" class="card-link btn btn-warning">Ver más</a>
                 </div>
             </div>
@@ -168,7 +174,9 @@
                     <li class="list-group-item">Disponible: SI</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link btn btn-success">Comprar</a>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Comprar
+                    </button>
                     <a href="#" class="card-link btn btn-warning">Ver más</a>
                 </div>
             </div>
@@ -187,12 +195,80 @@
                     <li class="list-group-item">Disponible: SI</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link btn btn-success">Comprar</a>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Comprar
+                    </button>
                     <a href="#" class="card-link btn btn-warning">Ver más</a>
                 </div>
             </div>
         </div>
     </main>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pedido</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="pedir" method="post">
+
+                        <label for="nombre">Nombre:
+                        <input type="text" id="nombre" name="nombre" />
+</label>
+                        <label for="apellido">Apellido:
+                        <input type="text" id="apellido" name="apellido" />
+</label>
+                        <label for="dni">DNI:
+                        <input type="number" id="dni" name="dni" />
+</label>
+                        <label for="destino">Destino:
+                        <select name="destino">
+                            <option value="tucuman">Tucumán</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="sanLuis">San Luis</option>
+                        </select>
+</label>
+                        <label for="cantidad">Cantidad:
+                        <input type="number" id="cantidad" name="cantidad" />
+</label>
+                        <label for="pago">Método de pago:
+                        <select name="pago">
+                            <option value="mp">Mercado Pago</option>
+                            <option value="debito-credito" selected>Débito/Crédito</option>
+                            <option value="efectivo">Efectivo</option>
+                        </select>
+</label>
+                    </form>
+
+                    En ViajandoAndo.com, queremos que tu experiencia de compra sea tan fácil y segura como el viaje que
+                    estás por emprender. Por eso, ofrecemos una variedad de métodos de pago para adaptarnos a tus
+                    necesidades:
+
+                    Mercado Pago: Disfrutá de la comodidad de pagar con tu cuenta de Mercado Pago.
+                    Tarjetas de Crédito/Débito: Aceptamos las principales tarjetas de crédito y débito para que puedas
+                    pagar en cuotas o al contado.
+                    Efectivo: Si preferís, puedes realizar tu pago en efectivo en nuestros puntos de venta autorizados.
+                    Queremos recordarte que tu reserva se confirmará una vez que el pago haya sido verificado. Ten en
+                    cuenta que si el pago no se recibe dentro de las 48 horas siguientes a la realización de la reserva,
+                    esta caducará automáticamente.
+
+                    Asegurá tu asiento y tu tranquilidad, eligiendo el método de pago que mejor se ajuste a ti.
+                    ViajandoAndo.com, tu viaje comienza aquí.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Pedir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <footer>

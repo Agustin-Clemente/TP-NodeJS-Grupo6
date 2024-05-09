@@ -31,6 +31,10 @@ div.carousel-inner{
     margin: 24px;
 }
 
+div.modal-body label{
+    display: block;
+}
+
 footer .footer-container  {
     display: flex;
     flex-wrap: wrap;
