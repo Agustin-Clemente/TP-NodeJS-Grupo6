@@ -27,19 +27,130 @@ div.carousel-inner{
     height: 80vh;
 }
 
-.card-deck{
+/* .card-deck{
     margin: 24px;
+} */
+
+.Card{
+    margin: 0 18px 48px 18px;
+}
+
+  
+ .cards-container,
+  footer .footer-container  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  
+ section img {
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+ .cards-container section {
+    width: 350px;
+    padding: 15px 0;
+    border-radius: 15px;
+    margin-bottom: 48px;
+  }
+  
+ .cards-container section:hover {
+    border: 1px solid red;
+  
+    -webkit-box-shadow: 0px 0px 26px 14px red;
+    -moz-box-shadow: 0px 0px 26px 14px red;
+    box-shadow: 0px 0px 26px 14px red;
+  }
+  
+  
+ .cards-container section h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+ .cards-container .section-cards-header h1 {
+    color: red;
+    margin-bottom: 40px;
+  }
+  
+ .cards-container section p {
+    margin-bottom: 10px;
+  }
+
+  .Card button, .Card button:focus {
+    font-weight: bold;
+    padding: 0.75rem 1.75rem;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    margin-left: 5px ;
+    margin-right: 5px ;
+    border-color: red;
+  box-shadow: 0 0 0 .2rem red;
+  }
+  
+  .Card button:hover {
+    -webkit-box-shadow: 0px 0px 26px 14px red;
+    -moz-box-shadow: 0px 0px 26px 14px red;
+    box-shadow: 0px 0px 26px 14px red;
+    background-color: white;
+    color: red;
+  }
+  
+  .btn-group, .Card button {
+    display: inline;
+    margin-bottom: 25px;
+  }
+  
+.modal-header{
+    text-align: center;
 }
 
 div.modal-body label{
     display: block;
 }
 
-footer .footer-container  {
+div.modal-body form input{
+    border-radius: 5px;
+}
+
+div.modal-body form input:focus, div.modal-body form select:focus{
+    outline: none;
+}
+
+div.modal-body form select{
+    background-color:transparent
+}
+
+div.modal-body form input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+  div.modal-body form input:focus:invalid {
+    box-shadow: none;
+  }
+
+  div.modal-body form input:valid,div.modal-body form input:focus:valid, div.modal-body form select:valid, div.modal-body form select:focus:valid  {
+    box-shadow: 0 0 5px 1px green;
+  }
+
+
+/* footer .footer-container  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
+} */
+
+/* .modal-header{
+    margin: 0 auto;
+} */
+
+
 
 footer {
     background-color: red;
