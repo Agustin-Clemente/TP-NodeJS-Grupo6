@@ -1,3 +1,48 @@
 form{
     margin: 24px;
 }
+
+main{
+    margin: 12px 24px;
+}
+
+div.img-contacto{
+    text-align: center;
+}
+
+#img{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+@media (max-width: 780px) {
+    #img{
+        display: none;
+    }
+  }
+
+
+main form{
+    margin: 0 24px 24px 24px;
+}
+
+.form-group.col-md-4{
+    padding-left: 0;
+}
+
+ .form-group input:invalid, .form-group textarea:invalid, .form-group textarea:focus:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+   .form-group input:focus:invalid {
+    box-shadow: none;
+  }
+
+   .form-group input:valid,.form-group input:focus:valid, .form-group select:valid, .form-group select:focus:valid,.form-group textarea:valid, .form-group textarea:focus:valid  {
+    box-shadow: 0 0 5px 1px green;
+  }

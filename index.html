@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3e96da98fd.js" crossorigin="anonymous"></script>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
@@ -25,7 +29,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="https://img.freepik.com/premium-vector/bus-logo-abstract_7315-17.jpg?w=900" alt="logo">
-            <a class="navbar-brand" href="#">ViajandoAndo.com</a>
+            <a class="navbar-brand" href="index.html">ViajandoAndo.com</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,8 +37,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">Ofertas</a>
-                    <a class="nav-link" href="#">Nuestros coches</a>
+                    <!--  <a class="nav-link" href="#">Ofertas</a> -->
+                    <a class="nav-link" href="coches.html">Nuestros coches</a>
                     <a class="nav-link" href="contacto.html">Contacto</a>
                     <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </div>
@@ -43,11 +47,11 @@
 
 
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
+            </ol> -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://www.comarcaturistica.com.ar/img/slides/slide_1.jpg" class="d-block w-100"
@@ -89,122 +93,136 @@
     </header>
 
 
-<main>
+    <main>
 
-<div class="cards-container">
-    <div class="Card">
 
-        <section>
-            <h3>Tucumán</h3>
-            <img src="https://resizer.glanacion.com/resizer/v2/tucuman-fue-el-lugar-elegido-para-llevar-adelante-LY24YM7G3RDOFBWICAMISQ6DCY.jpg?auth=1e6459521980a529b3a5cd92c681e282b5cf8c0f6653cae6a3a743e24f6a8ba7&width=880&height=586&quality=70&smart=true" alt="Imagen_Destino"/>
-            <p><b class="precio">Precio:</b> $40000</p>
-            <p><b class="precio">Duración:</b> 6 hs</p>
-            <p><b class="precio">Disponible:</b> SI</p>
-            <p><b>Detalles:</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt
-                excepturi, nisi numquam quo id rem sed porro asperiores adipisci voluptate, veritatis
-                accusantium a
-                saepe eveniet nesciunt enim animi? Illo.</p>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                    Comprar
-                </button>
-<!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
- -->            </div>
-        </section>
-    </div>
 
-    <div class="Card">
 
-        <section>
-            <h3>Tucumán</h3>
-            <img src="https://resizer.glanacion.com/resizer/v2/tucuman-fue-el-lugar-elegido-para-llevar-adelante-LY24YM7G3RDOFBWICAMISQ6DCY.jpg?auth=1e6459521980a529b3a5cd92c681e282b5cf8c0f6653cae6a3a743e24f6a8ba7&width=880&height=586&quality=70&smart=true" alt="Imagen_Destino"/>
-            <p><b class="precio">Precio:</b> $40000</p>
-            <p><b class="precio">Duración:</b> 6 hs</p>
-            <p><b class="precio">Disponible:</b> SI</p>
-            <p><b>Detalles:</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt
-                excepturi, nisi numquam quo id rem sed porro asperiores adipisci voluptate, veritatis
-                accusantium a
-                saepe eveniet nesciunt enim animi? Illo.</p>
+        <div class="cards-container">
+            <div data-aos="fade-up">
+                <div class="Card">
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                    Comprar
-                </button>
-                <!-- <a href="#" class="card-link btn btn-warning">Ver más</a> -->
+                    <section>
+                        <h3>Tucumán</h3>
+                        <img src="https://resizer.glanacion.com/resizer/v2/tucuman-fue-el-lugar-elegido-para-llevar-adelante-LY24YM7G3RDOFBWICAMISQ6DCY.jpg?auth=1e6459521980a529b3a5cd92c681e282b5cf8c0f6653cae6a3a743e24f6a8ba7&width=880&height=586&quality=70&smart=true"
+                            alt="Imagen_Destino" />
+                        <p><b class="precio">Precio:</b> $40000</p>
+                        <p><b class="precio">Duración:</b> 6 hs</p>
+                        <p><b class="precio">Disponible:</b> SI</p>
+                        <p><b>Detalles:</b> Tucumán, conocida como “El Jardín de la República”, es la puerta de entrada al norte argentino. A pesar de ser la provincia más pequeña en términos de superficie, es grande en naturaleza, cultura y tradición. Aquí, se firmó la Declaración de Independencia de Argentina entre 1816 y 1820. Tucumán ofrece encantadoras rutas, gastronomía deliciosa, parques naturales, ruinas indígenas, sitios arqueológicos, montañas, colinas, ríos y menhires. ¡Una provincia única llena de belleza, aventura y un valioso legado histórico</p>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Comprar
+                            </button>
+                            <!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
+ -->
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
-    </div>
 
-    <div class="Card">
+            <div data-aos="fade-up">
+                <div class="Card">
 
-        <section>
-            <h3>Tucumán</h3>
-            <img src="https://resizer.glanacion.com/resizer/v2/tucuman-fue-el-lugar-elegido-para-llevar-adelante-LY24YM7G3RDOFBWICAMISQ6DCY.jpg?auth=1e6459521980a529b3a5cd92c681e282b5cf8c0f6653cae6a3a743e24f6a8ba7&width=880&height=586&quality=70&smart=true" alt="Imagen_Destino"/>
-            <p><b class="precio">Precio:</b> $40000</p>
-            <p><b class="precio">Duración:</b> 6 hs</p>
-            <p><b class="precio">Disponible:</b> SI</p>
-            <p><b>Detalles:</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt
-                excepturi, nisi numquam quo id rem sed porro asperiores adipisci voluptate, veritatis
-                accusantium a
-                saepe eveniet nesciunt enim animi? Illo.</p>
+                    <section>
+                        <h3>San Luis</h3>
+                        <img src="https://www.argentina.gob.ar/sites/default/files/gral5.jpg"
+                            alt="Imagen_Destino" />
+                        <p><b class="precio">Precio:</b> $47000</p>
+                        <p><b class="precio">Duración:</b> 7 hs</p>
+                        <p><b class="precio">Disponible:</b> SI</p>
+                        <p><b>Detalles:</b> San Luis, ubicada en el centro-oeste de Argentina, es una provincia con una gran diversidad de paisajes. Desde las Sierras de las Quijadas hasta la Pampa de las Salinas, San Luis ofrece belleza natural, parques nacionales, ríos y lagunas. Su capital homónima, San Luis, es una ciudad tranquila con arquitectura colonial y espacios verdes. Además, la provincia es famosa por su clima agradable y su enfoque en el turismo sustentable. ¡Ideal para los amantes de la naturaleza y la tranquilidad!</p>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                    Comprar
-                </button>
-<!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
- -->            </div>
-        </section>
-    </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Comprar
+                            </button>
+                            <!-- <a href="#" class="card-link btn btn-warning">Ver más</a> -->
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-    <div class="Card">
+            <div data-aos="fade-up">
 
-        <section>
-            <h3>Tucumán</h3>
-            <img src="https://resizer.glanacion.com/resizer/v2/tucuman-fue-el-lugar-elegido-para-llevar-adelante-LY24YM7G3RDOFBWICAMISQ6DCY.jpg?auth=1e6459521980a529b3a5cd92c681e282b5cf8c0f6653cae6a3a743e24f6a8ba7&width=880&height=586&quality=70&smart=true" alt="Imagen_Destino"/>
-            <p><b class="precio">Precio:</b> $40000</p>
-            <p><b class="precio">Duración:</b> 6 hs</p>
-            <p><b class="precio">Disponible:</b> SI</p>
-            <p><b>Detalles:</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt
-                excepturi, nisi numquam quo id rem sed porro asperiores adipisci voluptate, veritatis
-                accusantium a
-                saepe eveniet nesciunt enim animi? Illo.</p>
+                <div class="Card">
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                    Comprar
-                </button>
-<!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
- -->            </div>
-        </section>
-    </div>
+                    <section>
+                        <h3>Catamarca</h3>
+                        <img src="https://2.bp.blogspot.com/-TGvvjKV-1Do/VDwNE8y87wI/AAAAAAAAJMw/yl4NrraqMD0/s1600/Ruta%2B60%2BFiambala%2BSeismiles%2BCatamarca%2BChaschuil%2BGuanchin%2BLoro%2BHuasi%2BCortaderas%2BCazadero%2BGrande%2B(25).jpg"
+                            alt="Imagen_Destino" />
+                        <p><b class="precio">Precio:</b> $45000</p>
+                        <p><b class="precio">Duración:</b> 8 hs</p>
+                        <p><b class="precio">Disponible:</b> SI</p>
+                        <p><b>Detalles:</b> La Provincia de Catamarca está ubicada al noroeste de Argentina, en la región del Norte Grande Argentino. Limita al norte con Salta, al este con Tucumán y Santiago del Estero, al sureste con Córdoba, al sur con La Rioja y al oeste con Chile, cuyo límite está determinado por la divisoria de agua de la cordillera de los Andes. Su capital es San Fernando del Valle de Catamarca. Con una población de alrededor de 429,562 habitantes, es una provincia con una rica historia y paisajes impresionantes. ¡Ideal para el turismo!</p>
 
-    <div class="Card">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Comprar
+                            </button>
+                            <!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
+ -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div data-aos="fade-up">
 
-        <section>
-            <h3>Tucumán</h3>
-            <img src="https://resizer.glanacion.com/resizer/v2/tucuman-fue-el-lugar-elegido-para-llevar-adelante-LY24YM7G3RDOFBWICAMISQ6DCY.jpg?auth=1e6459521980a529b3a5cd92c681e282b5cf8c0f6653cae6a3a743e24f6a8ba7&width=880&height=586&quality=70&smart=true" alt="Imagen_Destino"/>
-            <p><b class="precio">Precio:</b> $40000</p>
-            <p><b class="precio">Duración:</b> 6 hs</p>
-            <p><b class="precio">Disponible:</b> SI</p>
-            <p><b>Detalles:</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt
-                excepturi, nisi numquam quo id rem sed porro asperiores adipisci voluptate, veritatis
-                accusantium a
-                saepe eveniet nesciunt enim animi? Illo.</p>
+                <div class="Card">
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                    Comprar
-                </button>
-<!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
- -->            </div>
-        </section>
-    </div>
-</div>
+                    <section>
+                        <h3>Córdoba</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgHjMDwZXbO-KDw1jmQocAY5kbGHh47XAUwW_sWvnJ1w&s"
+                            alt="Imagen_Destino" />
+                        <p><b class="precio">Precio:</b> $30000</p>
+                        <p><b class="precio">Duración:</b> 4 hs</p>
+                        <p><b class="precio">Disponible:</b> SI</p>
+                        <p><b>Detalles:</b>  La Provincia de Córdoba es una de las veintitrés provincias autónomas que integran la República Argentina. Está ubicada en el centro geográfico del país, al oeste de la región Centro, limitando al norte con Catamarca y Santiago del Estero, al este con Santa Fe, al sureste con la provincia de Buenos Aires, al sur con La Pampa y al oeste con San Luis y La Rioja. Su capital y ciudad más poblada es la homónima Córdoba, que es un importante centro cultural, económico, educativo, financiero y de entretenimiento. La provincia cubre el 4% del territorio nacional y se encuentra entre las últimas prolongaciones de la llanura y los comienzos de la serranía, equidistante entre el Océano Pacífico y el Atlántico. ¡Es un lugar fascinante para explorar!</p>
 
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Comprar
+                            </button>
+                            <!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
+ -->
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-</main>
+            <div data-aos="fade-up">
+
+                <div class="Card">
+
+                    <section>
+                        <h3>San Juan</h3>
+                        <img src="https://media.staticontent.com/media/pictures/abd931ea-c38a-46a5-89fa-4cb5aa3bdba9"
+                            alt="Imagen_Destino" />
+                        <p><b class="precio">Precio:</b> $45000</p>
+                        <p><b class="precio">Duración:</b> 6 hs</p>
+                        <p><b class="precio">Disponible:</b> SI</p>
+                        <p><b>Detalles:</b> San Juan es una provincia argentina situada en el centro oeste del país. Limita al norte y este con la provincia de La Rioja, al sureste con la de San Luis, al sur con Mendoza y al oeste con la República de Chile, cuyo límite está determinado por la cordillera de los Andes. Su capital y ciudad más poblada es la homónima San Juan. Esta ciudad, también conocida como Gran San Juan, es un importante centro administrativo, comercial e institucional. En 2010, registró una población de 471,389 habitantes, ubicándose como el segundo núcleo urbano de mayor tamaño demográfico en la Región de Cuyo y entre los diez centros más importantes de Argentina. Además, San Juan cuenta con una rica infraestructura de alojamiento y transporte, y sus alrededores ofrecen atractivos como el embalse y dique Ullum, la Quebrada de Zonda, termas, museos y las Rutas del vino de San Juan. ¡Es un destino fascinante para explorar!</p>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Comprar
+                            </button>
+                            <!--                 <a href="#" class="card-link btn btn-warning">Ver más</a>
+ -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </main>
 
     <!-- <main>
         <div class="card-deck">
@@ -337,33 +355,36 @@
                     <form action="pedir" method="post">
 
                         <label for="nombre">Nombre:
-                        <input type="text" id="nombre" name="nombre"  onblur="habilitar()" required />
-</label>
+                            <input type="text" id="nombre" name="nombre" onblur="habilitar()" required />
+                        </label>
                         <label for="apellido">Apellido:
-                        <input type="text" id="apellido" name="apellido" onblur="habilitar()" required/>
-</label>
+                            <input type="text" id="apellido" name="apellido" onblur="habilitar()" required />
+                        </label>
                         <label for="dni">DNI:
-                        <input type="number" id="dni" name="dni" onblur="habilitar()" required/>
-</label>
+                            <input type="number" min="1" id="dni" name="dni" onblur="habilitar()" required />
+                        </label>
                         <label for="destino">Destino:
-                        <select name="destino" id="destino" onchange="habilitar()" required>
-                            <option value="tucuman">Tucumán</option>
-                            <option value="cordoba">Córdoba</option>
-                            <option value="sanLuis">San Luis</option>
-                        </select>
-</label>
+                            <select name="destino" id="destino" onchange="habilitar()" required>
+                                <option value="tucuman">Tucumán</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="sanLuis">San Luis</option>
+                                <option value="sanLuis">San Juan</option>
+                                <option value="sanLuis">Catamarca</option>
+                            </select>
+                        </label>
                         <label for="cantidad">Cantidad:
-                        <input type="number" id="cantidad" name="cantidad" onblur="habilitar()" required/>
-</label>
+                            <input type="number" min="1" id="cantidad" name="cantidad" onblur="habilitar()" required />
+                        </label>
                         <label for="pago">Método de pago:
-                        <select name="pago" id="pago" onblur="habilitar()" required>
-                            <option value="mp">Mercado Pago</option>
-                            <option value="debito-credito" selected>Débito/Crédito</option>
-                            <option value="efectivo">Efectivo</option>
-                        </select>
-</label>
-                    
-</form>
+                            <select name="pago" id="pago" onblur="habilitar()" required>
+                                <option value="mp">Mercado Pago</option>
+                                <option value="debito-credito" selected>Débito/Crédito</option>
+                                <option value="efectivo">Efectivo</option>
+                            </select>
+                        </label>
+
+                    </form>
+                    <p>
                     En ViajandoAndo.com, queremos que tu experiencia de compra sea tan fácil y segura como el viaje que
                     estás por emprender. Por eso, ofrecemos una variedad de métodos de pago para adaptarnos a tus
                     necesidades:
@@ -378,11 +399,13 @@
 
                     Asegurá tu asiento y tu tranquilidad, eligiendo el método de pago que mejor se ajuste a ti.
                     ViajandoAndo.com, tu viaje comienza aquí.
+                </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-danger" id="pedir" disabled onclick="location.reload()">Pedir</button>
-                
+                    <button type="submit" class="btn btn-danger" id="pedir" disabled
+                        onclick="location.reload()">Pedir</button>
+
                 </div>
             </div>
         </div>
@@ -400,7 +423,6 @@
             <section>
                 <h4>Atención al cliente</h4>
                 <p> <a href="contacto.html">Contactanos </a></p>
-                <p> <a href="">Preguntas frecuentes </a></p>
             </section>
 
             <section>
@@ -419,6 +441,8 @@
         <h6>Copyright 2024</h6>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -426,7 +450,10 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 
-        <script src="index.js"></script>
+    <script src="index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +12,9 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="coches.css">
     <title>TP-NodeJS-Grupo6</title>
 </head>
-
 <body>
     <header>
         <div class="header">
@@ -43,74 +41,22 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="row" >
-                <div class="col" id="img">
-                    <div class="img-contacto">
-                        <img src="img/contacto.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="col">
-                    <form>
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" onblur="habilitar()" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" onblur="habilitar()" required>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                value="compra">
-                            <label class="form-check-label" for="exampleRadios1">
-                                Tengo un problema con una compra
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                                value="consulta">
-                            <label class="form-check-label" for="exampleRadios2">
-                                Tengo una consulta
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                                value="otro">
-                            <label class="form-check-label" for="exampleRadios3">
-                                Otro
-                            </label>
-                        </div>
-
-                        <br>
-
-                        <div class="form-group col-md-4">
-                            <label for="destino">Destino</label>
-                            <select id="destino" class="form-control" onchange="habilitar()" required>
-                                <option selected></option>
-                                <option>Tucumán</option>
-                                <option>Catamarca</option>
-                                <option>San Luis</option>
-                                <option>Córdoba</option>
-                                <option>San Juan</option>
-                            </select>
-                        </div>
-
-
-                        <div class="form-group">
-                            <label for="mensaje">Dejanos tu mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="3" onblur="habilitar()"
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-danger" id="enviar" disabled>Enviar</button>
-                    </form>
-
-                </div>
-            </div>
+        <div class="img-coches">
+            <img src="https://lu17.com/download/multimedia.normal.b48c80926b3a1ab2.696d675f303030385f696d61676530303032345f6e6f726d616c2e77656270.webp" alt="imagen_coches">
         </div>
+
+        <p>Descubre la Comodidad y Seguridad de Nuestros Coches de Larga Distancia
+
+            En ViajandoAndo.com, nos enorgullece ofrecer una flota de coches diseñada para brindarte una experiencia de viaje excepcional. ¿Qué hace que nuestros coches sean ideales para largas distancias? Aquí te lo contamos: </p>
+            
+            <ul>
+            <li>Comodidad Espaciosa: Nuestros coches están equipados con asientos amplios y cómodos. Disfruta de viajes sin apretujones y con suficiente espacio para estirarte y relajarte.</li>
+            <li>Tecnología a Bordo: Con Wi-Fi gratuito, entretenimiento a bordo y puertos de carga, tus viajes serán más amenos. Mantente conectado y entretenido durante todo el trayecto.</li>
+            <li>Seguridad Prioritaria: La seguridad es nuestra máxima prioridad. Nuestros coches cuentan con sistemas avanzados, como frenos antibloqueo (ABS) y control de tracción, para garantizar tu tranquilidad en la carretera.</li>
+            <li>Mantenimiento Riguroso: Realizamos mantenimientos regulares para asegurar que nuestros coches estén en óptimas condiciones. Así, puedes confiar en su fiabilidad y rendimiento.</li>
+            <li>Conductores Profesionales: Nuestros conductores están altamente capacitados y comprometidos con tu seguridad. Viaja con confianza sabiendo que estás en buenas manos.</li>
+</ul>
+            <p>ViajandoAndo.com, donde la comodidad y la seguridad se unen para hacer de tus viajes una experiencia inolvidable.</p>
     </main>
 
     <footer>
@@ -147,8 +93,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-
-    <script src="contacto.js"></script>
+    
 </body>
-
 </html>

@@ -11,12 +11,29 @@ header .header div{
     font-size: 36px;
 }
 
+header nav .navbar-brand{
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 nav.navbar img{
     width: 72px;
 }
 
+@media (max-width: 600px) {
+    #carouselExampleCaptions{
+        display: none;
+    }
+  }
+  
+
 header#carouselExampleCaptions.carousel.slide div.carousel-inner{
     height: 90vh;
+}
+
+.carousel-caption.d-none.d-md-block{
+    background-color: rgba(128, 128, 128, .5)
 }
 
 div.carousel-inner{
@@ -51,9 +68,9 @@ div.carousel-inner{
     border-radius: 10px;
   }
   
- .cards-container section {
+ .cards-container .Card section {
     width: 350px;
-    padding: 15px 0;
+    padding: 15px 12px;
     border-radius: 15px;
     margin-bottom: 48px;
   }
@@ -88,8 +105,9 @@ div.carousel-inner{
     color: white;
     background-color: red;
     cursor: pointer;
-    margin-left: 5px ;
-    margin-right: 5px ;
+    /* margin-left: 5px ;
+    margin-right: 5px ; */
+    margin: 12px 5px 0 5px ;
     border-color: red;
   box-shadow: 0 0 0 .2rem red;
   }
@@ -139,6 +157,10 @@ div.modal-body form input:invalid {
     box-shadow: 0 0 5px 1px green;
   }
 
+  div.modal-body p{
+    margin-top: 24px;
+  }
+
 
 /* footer .footer-container  {
     display: flex;
@@ -182,6 +204,11 @@ footer section p{
 
 footer section a{
     text-decoration: none;
+    color: white;
+}
+
+footer section a:hover{
+    text-decoration: underline;
     color: white;
 }
 
