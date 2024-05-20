@@ -6,10 +6,10 @@ function habilitar() {
     let cantidad = document.getElementById("cantidad");
     let pago = document.getElementById("pago");
     let botonPedir = document.getElementById("pedir");
-  
+
     if (nombre.value === '' || apellido.value === '' || dni.value === '' || destino.value === '' || cantidad.value === '' || pago.value === '') {
         botonPedir.disabled = true;
     } else {
         botonPedir.disabled = false;
     }
-  }
+}

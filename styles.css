@@ -44,17 +44,13 @@ div.carousel-inner{
     height: 80vh;
 }
 
-/* .card-deck{
-    margin: 24px;
-} */
 
 .Card{
     margin: 0 18px 48px 18px;
 }
 
   
- .cards-container,
-  footer .footer-container  {
+ .cards-container, footer .footer-container  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -74,6 +70,16 @@ div.carousel-inner{
     border-radius: 15px;
     margin-bottom: 48px;
   }
+
+  @media (max-width: 349px) {
+  .cards-container .Card section {
+    width: 320px;
+  }
+
+  .Card{
+    margin: 0 0px 48px 0px;
+  }
+}
   
  .cards-container section:hover {
     border: 1px solid red;
@@ -105,8 +111,6 @@ div.carousel-inner{
     color: white;
     background-color: red;
     cursor: pointer;
-    /* margin-left: 5px ;
-    margin-right: 5px ; */
     margin: 12px 5px 0 5px ;
     border-color: red;
   box-shadow: 0 0 0 .2rem red;
@@ -160,19 +164,6 @@ div.modal-body form input:invalid {
   div.modal-body p{
     margin-top: 24px;
   }
-
-
-/* footer .footer-container  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-} */
-
-/* .modal-header{
-    margin: 0 auto;
-} */
-
-
 
 footer {
     background-color: red;
