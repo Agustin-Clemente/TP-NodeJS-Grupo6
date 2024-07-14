@@ -104,6 +104,17 @@ div.carousel-inner{
     margin-bottom: 10px;
   }
 
+  .precioReg{
+    text-decoration:line-through;
+  }
+
+  .desc{
+    background-color: #e48e8e;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+  
+
   .Card button, .Card button:focus {
     font-weight: bold;
     padding: 0.75rem 1.75rem;
