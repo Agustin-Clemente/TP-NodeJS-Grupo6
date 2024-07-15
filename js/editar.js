@@ -44,11 +44,11 @@ btnConsultar.addEventListener("click", () => {
       //id_destino.value = data[0].id_destino
       //nombre_destino.value = data[0].nombre_destino
       if (data[0].nombre_destino == "Catamarca") {
-        id_destino.value = 1
-      } if (data[0].nombre_destino == "San Juan") {
         id_destino.value = 2
-      } if (data[0].nombre_destino == "Tucumán") {
+      } if (data[0].nombre_destino == "San Juan") {
         id_destino.value = 3
+      } if (data[0].nombre_destino == "Tucumán") {
+        id_destino.value = 1
       }
       //id_destino.value = data[0].nombre_destino
       duracion.value = data[0].duracion
