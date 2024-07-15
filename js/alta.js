@@ -13,7 +13,8 @@ formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 
   //let url = 'http://localhost:3000/alta/';
-  let url = 'https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/alta/';
+  //let url = 'https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/alta/';
+  let url = 'https://tp-backend-grupo6.vercel.app/alta/';
   let formData = new FormData();
 
   formData.append('id_destino', id_destino.value);

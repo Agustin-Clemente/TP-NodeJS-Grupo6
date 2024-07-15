@@ -1,6 +1,7 @@
 
 //fetch('http://localhost:3000/')
-fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/')
+//fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/')
+fetch('https://tp-backend-grupo6.vercel.app/')
     .then(response => response.json())
     .then(data => mostrarPaquetes(data))
     .catch(error => console.log(error))

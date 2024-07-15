@@ -29,7 +29,8 @@ id.addEventListener("keydown", (event) => {
 btnConsultar.addEventListener("click", () => {
 
   //fetch('http://localhost:3000/buscar/' + id.value)
-  fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/buscar/' + id.value)
+  //fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/buscar/' + id.value)
+  fetch('https://tp-backend-grupo6.vercel.app/buscar/' + id.value)
     .then(response => response.json())
     .then(data => {
       console.log(data)
@@ -130,7 +131,8 @@ formulario.addEventListener("submit", (event) => {
   }).then((result) => {
     if (result.isConfirmed) {
       //fetch('http://localhost:3000/editar/' + id.value, {
-      fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/editar/' + id.value, {
+      //fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/editar/' + id.value, {
+        fetch('https://tp-backend-grupo6.vercel.app/editar/' + id.value, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json' // Indica que estás enviando JSON
@@ -175,7 +177,8 @@ btnEliminar.addEventListener("click", () => {
   }).then((result) => {
     if (result.isConfirmed) {
       //fetch('http://localhost:3000/baja/' + id.value, {
-      fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/baja/' + id.value, {
+      //fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/baja/' + id.value, {
+        fetch('https://tp-backend-grupo6.vercel.app/baja/' + id.value, {
         method: 'DELETE'
       })
         .then(response => response.json())
