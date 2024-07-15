@@ -18,20 +18,20 @@ let imagenProbando = document.getElementById("imagenProbando");
 
 id.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
-      event.preventDefault(); // Evitar que se envíe un formulario si hay uno
-      btnConsultar.click();
+    event.preventDefault(); // Evitar que se envíe un formulario si hay uno
+    btnConsultar.click();
   }
 });
 
 
 
 
-btnConsultar.addEventListener("click", ()=>{
+btnConsultar.addEventListener("click", () => {
 
-    //fetch('http://localhost:3000/buscar/' + id.value)
-    fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/buscar/' + id.value)
+  //fetch('http://localhost:3000/buscar/' + id.value)
+  fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/buscar/' + id.value)
     .then(response => response.json())
-    .then(data =>{
+    .then(data => {
       console.log(data)
       if (data[0] == undefined) {
         Swal.fire({
@@ -47,7 +47,7 @@ btnConsultar.addEventListener("click", ()=>{
         id_destino.value = 1
       } if (data[0].nombre_destino == "San Juan") {
         id_destino.value = 2
-      }if (data[0].nombre_destino == "Tucumán"){
+      } if (data[0].nombre_destino == "Tucumán") {
         id_destino.value = 3
       }
       //id_destino.value = data[0].nombre_destino
@@ -57,11 +57,11 @@ btnConsultar.addEventListener("click", ()=>{
       for (const dispo of disponible) {
         if (dispo.value === data[0].disponible.toString()) {
           dispo.checked = true; // Marca el radio button correspondiente
-            break; // Sal del bucle una vez que encuentres el correcto
+          break;
         }
-    }
-      
-      
+      }
+
+
 
       //disponible.value = data[0].disponible? "Si" : "No"
       precio.value = data[0].precio
@@ -71,14 +71,14 @@ btnConsultar.addEventListener("click", ()=>{
         descuento.value = 1
       } if (data[0].descuento == 15) {
         descuento.value = 2
-      }if (data[0].descuento == 20){
+      } if (data[0].descuento == 20) {
         descuento.value = 3
       }
-    if (data[0].descuento == 50){
-      descuento.value = 4
-    }
-      
-    }) 
+      if (data[0].descuento == 50) {
+        descuento.value = 4
+      }
+
+    })
 })
 
 
@@ -93,66 +93,66 @@ formulario.addEventListener("submit", (event) => {
   //formData.append('disponible', disponible.value== "Si" ? 1 : 2);
   for (const dispo of disponible) {
     if (dispo.checked) {
-    formData.append('disponible',dispo.value)
-  break
+      formData.append('disponible', dispo.value)
+      break
     }
-}
-  
+  }
+
   formData.append('precio', precio.value);
   //formData.append('detalle', detalle.value);
   formData.append('id_promo', descuento.value);
   //formData.append('imagen', imagen.value);
   console.log(formData)
- /*  if (imagen.files[0]) {
-      formData.append('imagen', imagen.files[0]);
-  } */
 
-      const data = {};
 
-      // Iterar sobre las entradas del FormData
-      for (const [key, value] of formData.entries()) {
-          data[key] = value;
-      }
-      
-      // Convertir el objeto a JSON
-      const jsonData = JSON.stringify(data);
-      
+  const data = {};
+
+  // Iterar sobre las entradas del FormData
+  for (const [key, value] of formData.entries()) {
+    data[key] = value;
+  }
+
+  // Convertir el objeto a JSON
+  const jsonData = JSON.stringify(data);
+
+  Swal.fire({
+    title: "¿Quieres guardar los cambios?",
+    showCancelButton: true,
+    confirmButtonText: "Guardar",
+    confirmButtonColor: "white",
+    cancelButtonText: "Cancelar",
+    cancelButtonColor: "#d33",
+    customClass: {
+      confirmButton: "custom-confirm-button"
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      //fetch('http://localhost:3000/editar/' + id.value, {
+      fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/editar/' + id.value, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json' // Indica que estás enviando JSON
+        },
+        body: jsonData
+      }).then(res => res.json())
+        .catch(error => console.error('Error:', error))
+        .then(response => {
+          console.log('Success:', response);
+          formulario.reset();
+        });
       Swal.fire({
-        title: "¿Quieres guardar los cambios?",
-        showCancelButton: true,
-        confirmButtonText: "Guardar",
+        title: "Paquete modificado exitosamente",
+        confirmButtonText: "Continuar",
         confirmButtonColor: "white",
-        cancelButtonText: "Cancelar",
-        cancelButtonColor: "#d33",
         customClass: {
-          confirmButton: "custom-confirm-button" }
-      }).then((result) => {
-        if (result.isConfirmed) {
-          //fetch('http://localhost:3000/editar/' + id.value, {
-            fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/editar/' + id.value, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json' // Indica que estás enviando JSON
-            },
-            body: jsonData
-          }).then(res => res.json())
-          .catch(error => console.error('Error:', error))
-          .then(response => {
-              console.log('Success:', response);
-              formulario.reset();
-          });
-          Swal.fire({
-            title: "Paquete modificado exitosamente",
-            confirmButtonText: "Continuar",
-            confirmButtonColor: "white",
-            customClass: {
-              confirmButton: "custom-confirm-button" }
-          })
-            } 
-      });
-  
+          confirmButton: "custom-confirm-button"
+        }
+      })
+    }
+  });
 
-  
+
+
 });
 
 
@@ -168,18 +168,19 @@ btnEliminar.addEventListener("click", () => {
     confirmButtonText: "Eliminar",
     cancelButtonText: "Cancelar",
     customClass: {
-                confirmButton: "custom-confirm-button" }
+      confirmButton: "custom-confirm-button"
+    }
   }).then((result) => {
     if (result.isConfirmed) {
       //fetch('http://localhost:3000/baja/' + id.value, {
-        fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/baja/' + id.value, {
+      fetch('https://f89dace8-bdb0-4f64-bbaa-ae684cc2f25f-00-6map68f6l36u.worf.replit.dev/baja/' + id.value, {
         method: 'DELETE'
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        formulario.reset()
-    })
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          formulario.reset()
+        })
       Swal.fire({
         title: "¡Eliminado!",
         text: "El paquete fue eliminado",
@@ -188,13 +189,13 @@ btnEliminar.addEventListener("click", () => {
       });
     }
   });
-  
+
 });
 
 function habilitar() {
 
   if (id_destino.value === '' || duracion.value === '' || disponible.value === '' || precio.value === '' || descuento.value === '') {
-      btnConfirmar.disabled = true;
+    btnConfirmar.disabled = true;
   } else {
     btnConfirmar.disabled = false;
   }

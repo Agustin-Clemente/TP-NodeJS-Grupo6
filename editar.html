@@ -49,20 +49,7 @@
 
     <main>
         <div class="row principal justify-content-center align-items-center ">
-            <!-- <div class="col-8 col-md-6 col-lg-4 tabla mx-3">
 
-                <h1 class="text-white text-center">Editar </h1>
-
-                <div class="my-4 text-center">
-
-                    <label for="id">ID</label>
-                    <input type="text" name="" id="id" class="mt-2 text-end" placeholder="Ingrese el ID">
-
-                    <button class="btn btn-danger" id="btnConsultar">Consultar</button>
-
-                </div>
-
-            </div> -->
 
             <br>
             <div class="col-8 col-md-6 col-lg-4 tabla">
@@ -79,49 +66,43 @@
 
                 <form id="formulario">
 
-                   <!--  <div class="mb-3 text-center">
-                       
-                        <label for="nombre_destino" class="form-label">Destino</label>
-                        <input type="text" class="form-control" id="nombre_destino" name="nombre_destino" disabled>
-                    </div> -->
-                    <!--  <label for="id_destino" class="form-label">Selecciona un destino:</label>
-                        <select id="id_destino" name="id_destino" required>
-                            <option value="1">Catamarca</option>
-                            <option value="2">San Juan</option>
-                            <option value="3">Tucumán</option>
-                        </select> -->
+
                     <div class="form-group text-center">
                         <label for="id_destino">Destino</label>
                         <select class="form-control" id="id_destino" name="id_destino" onblur="habilitar()" required>
-                            <option value="1">Catamarca</option>
-                            <option value="2">San Juan</option>
-                            <option value="3">Tucumán</option>
+                            <option value="1">Tucumán</option>
+                            <option value="2">Catamarca</option>
+                            <option value="3">San Juan</option>
                         </select>
                     </div>
 
                     <div class="mb-3 text-center my-5">
                         <label for="paquete.duracion" class="form-label">Duración</label>
-                        <input type="number" class="form-control" id="paquete.duracion" name="paquete.duracion" onblur="habilitar()"
-                            required>
+                        <input type="number" class="form-control" id="paquete.duracion" name="paquete.duracion"
+                            onblur="habilitar()" required>
                     </div>
-                  
+
                     <fieldset class="mb-3 text-center my-5">
-                    <legend>Disponible</legend>
-                    <label for="paquete.disponible"> 
-                        <input type="radio" name="paquete.disponible" id="paquete.disponible" value="1" onblur="habilitar()"> Sí
-                    </label>
-                    <label>
-                        <input type="radio" name="paquete.disponible" id="paquete.disponible" value="2" onblur="habilitar()"> No
-                    </label>
-                </fieldset>
+                        <legend>Disponible</legend>
+                        <label for="paquete.disponible">
+                            <input type="radio" name="paquete.disponible" id="paquete.disponible" value="1"
+                                onblur="habilitar()"> Sí
+                        </label>
+                        <label>
+                            <input type="radio" name="paquete.disponible" id="paquete.disponible" value="2"
+                                onblur="habilitar()"> No
+                        </label>
+                    </fieldset>
                     <div class="mb-3 text-center my-5">
                         <label for="paquete.precio" class="form-label">Precio</label>
-                        <input type="number" class="form-control" id="paquete.precio" name="paquete.precio" onblur="habilitar()" required>
+                        <input type="number" class="form-control" id="paquete.precio" name="paquete.precio"
+                            onblur="habilitar()" required>
                     </div>
-                   
+
                     <div class="form-group text-center">
                         <label for="paquete.descuento">Descuento</label>
-                        <select class="form-control" id="paquete.descuento" name="paquete.descuento" onblur="habilitar()" required>
+                        <select class="form-control" id="paquete.descuento" name="paquete.descuento"
+                            onblur="habilitar()" required>
                             <option value="1">10</option>
                             <option value="2">15</option>
                             <option value="3">20</option>
@@ -129,7 +110,7 @@
                         </select>
                     </div>
 
-        
+
 
 
                     <div class="d-grid gap-2 mx-auto text-center my-5">
@@ -151,7 +132,7 @@
 
         </div>
 
-       
+
 
     </main>
 
@@ -168,7 +149,7 @@
     <script>
         AOS.init();
     </script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

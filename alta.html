@@ -56,40 +56,29 @@
 
             <form id="formulario" enctype="multipart/form-data">
 
-                <!-- <div class="mb-3 text-center my-3">
-                    <label for="id_destino" class="form-label">id_destino</label>
-                    <input type="number" class="form-control" id="id_destino" name="id_destino"
-                         required>
-                </div> -->
                 <div class="form-group text-center">
                     <label for="id_destino">Destino</label>
                     <select class="form-control" id="id_destino" name="id_destino" required>
-                        <option value="1">Catamarca</option>
-                        <option value="2">San Juan</option>
-                        <option value="3">Tucumán</option>
+                        <option value="1">Tucumán</option>
+                        <option value="2">Catamarca</option>
+                        <option value="3">San Juan</option>
+
                     </select>
                 </div>
                 <div class="mb-3 text-center my-3">
                     <label for="precio" class="form-label">Precio</label>
-                    <input type="number" class="form-control" id="precio" name="precio"
-                        required>
+                    <input type="number" class="form-control" id="precio" name="precio" required>
                 </div>
 
                 <div class="mb-3 text-center my-3">
                     <label for="duracion" class="form-label">Duración</label>
-                    <input type="number" class="form-control" id="duracion" name="duracion"
-                        required>
+                    <input type="number" class="form-control" id="duracion" name="duracion" required>
                 </div>
 
-                <!-- <div class="mb-3 text-center my-3">
-                    <label for="disponible" class="form-label">Disponible</label>
-                    <input type="number" class="form-control" id="disponible" name="disponible"
-                        required>
-                </div> -->
 
                 <fieldset class="mb-3 text-center my-5">
                     <legend>Disponible</legend>
-                    <label for="paquete.disponible"> 
+                    <label for="paquete.disponible">
                         <input type="radio" name="paquete.disponible" id="paquete.disponible" value="1"> Sí
                     </label>
                     <label>
@@ -97,11 +86,6 @@
                     </label>
                 </fieldset>
 
-               <!--  <div class="mb-3 text-center my-3">
-                    <label for="id_promo" class="form-label">Descuento</label>
-                    <input type="number" class="form-control" id="id_promo" name="id_promo"
-                        required>
-                </div> -->
 
                 <div class="form-group text-center">
                     <label for="paquete.descuento">Descuento</label>
@@ -133,7 +117,9 @@
 
     </div>
     <script src="./js/alta.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
